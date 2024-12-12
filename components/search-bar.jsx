@@ -33,6 +33,7 @@ const SearchBar = () => {
           <SheetContent
             side="top"
             className="w-full flex items-center justify-center"
+            showCloseIcon={false}
           >
             <SearchInput />
           </SheetContent>
