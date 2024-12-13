@@ -11,6 +11,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import SearchBar from "./search-bar";
+import AuthContextProvider from "@/context/AuthContext";
 
 const Header = () => {
   return (
@@ -68,7 +69,9 @@ const Header = () => {
         </div>
 
         {/* User Login */}
-        <UserLogin />
+        <AuthContextProvider>
+          <UserLogin />
+        </AuthContextProvider>
       </div>
     </header>
   );
